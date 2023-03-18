@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#side_nav {
+    background: #000;
+    min-width: 200px;
+    max-width: 200px;
+    padding-top: 5px;
+    transition: all 0.3s;
+}
+
+#thumbnail {
+    width: 90%;
+}
+
+.table {
+    margin :0;
+}
+form.table{
+    margin :0;
+}
+
+.img-fluid {
+    width: 60%;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1);
+}
+
+#thumbnail {
+    align-items: center;
+    width: 90%;
+}
+
+.table {
+    margin :0;
+}
+
+form.table{
+    margin :0;
+}
+
+.img-fluid {
+    width: 60%;
+}
+
+#photo {
+    width: 50%;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.sidebar li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a {
+    color: #000;
+}
+
+.sidebar li a:hover {
+    background: rgb(54, 141, 146);
+    border-radius: 8px;
+}
+
+.sidebar li a {
+    color: #eee;
+}
+
+.foot{
+    background-color: #BFE5EF;
+}
+
+@media(max-width: 1920px) {
+    #side_nav{
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+}
+
+.profile-pic-div{
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+#photo{
+    height: 100%;
+    width: 100%;
+}
+
+#file{
+    display: none;
+}
+
+#uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
